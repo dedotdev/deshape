@@ -13,11 +13,11 @@ await build({
   ],
   outDir: "target/npm_pkg",
   package: {
-    name: "subshape",
+    name: "deshape",
     version: Deno.args[0]!,
     description,
     sideEffects: false,
-    repository: "github:paritytech/subshape",
+    repository: "github:dedotdev/deshape",
   },
   shims: {
     deno: {
