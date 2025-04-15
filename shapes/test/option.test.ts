@@ -66,6 +66,7 @@ Deno.test("nested option with custom none values", () => {
   
   const undefinedValue = undefined;
   const encodedUndefined = $nestedCustom.encode(undefinedValue);
+  assertEquals(encodedUndefined, new Uint8Array([0]));
   assertEquals($nestedCustom.decode(encodedUndefined), undefinedValue);
 });
 
